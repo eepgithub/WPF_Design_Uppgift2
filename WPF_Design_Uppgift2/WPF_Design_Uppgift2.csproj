@@ -8,10 +8,26 @@
 
   <ItemGroup>
     <None Remove="no-profile %281%29.png" />
+    <None Remove="Views\1IsakPettersson-600x480.jpg" />
+    <None Remove="Views\3RasmusLauritsen-600x480.jpg" />
+    <None Remove="Views\5ChristofferNyman-600x480 - kopia.jpg" />
+    <None Remove="Views\5ChristofferNyman-600x480.jpg" />
+    <None Remove="Views\7AlexanderFransson-600x480 - kopia.jpg" />
+    <None Remove="Views\7AlexanderFransson-600x480.jpg" />
+    <None Remove="Views\AP7I3326-600x400.jpg" />
+    <None Remove="Views\Jens-Gustafsson-600x871 - kopia.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="no-profile (1).png" />
+    <Resource Include="Views\1IsakPettersson-600x480.jpg" />
+    <Resource Include="Views\3RasmusLauritsen-600x480.jpg" />
+    <Resource Include="Views\5ChristofferNyman-600x480 - kopia.jpg" />
+    <Resource Include="Views\5ChristofferNyman-600x480.jpg" />
+    <Resource Include="Views\7AlexanderFransson-600x480 - kopia.jpg" />
+    <Resource Include="Views\7AlexanderFransson-600x480.jpg" />
+    <Resource Include="Views\AP7I3326-600x400.jpg" />
+    <Resource Include="Views\Jens-Gustafsson-600x871 - kopia.jpg" />
   </ItemGroup>
 
 </Project>

@@ -14,18 +14,13 @@ using System.Windows.Shapes;
 namespace WPF_Design_Uppgift2.Views
 {
     /// <summary>
-    /// Interaction logic for ContactViewModel.xaml
+    /// Interaction logic for ContactInfoViewModel.xaml
     /// </summary>
-    public partial class ContactViewModel : UserControl
+    public partial class ContactInfoViewModel : UserControl
     {
-        public ContactViewModel()
+        public ContactInfoViewModel()
         {
             InitializeComponent();
         }
-
-        
-        
-
-
     }
 }
