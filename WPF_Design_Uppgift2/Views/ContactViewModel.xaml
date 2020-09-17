@@ -19,14 +19,60 @@
                 <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE716;" FontSize="25" Margin="10"/>
                 <TextBlock HorizontalAlignment="Center" Text="Contacts" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="245" FontSize="25" Margin="10,5,0,0"/>
             </StackPanel>
-            <Controls:ContactControls ContactName="Jens Gustafsson" ContactRole="Manager" ContactImage="/Views/Jens-Gustafsson-600x871 - kopia.jpg" />
+            
+            <Button Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Contact1" Click="Contact1_Click">
+            <Controls:ContactControls ContactName="Jens Gustafsson" ContactRole="Manager" ContactImage="/Views/Jens-Gustafsson-600x871 - kopia.jpg"/>
+            </Button>
+            
+            <Button Background="Transparent" x:Name="Contact2" Click="Contact2_Click" BorderBrush="{x:Null}">
             <Controls:ContactControls ContactName="Isak Pettersson" ContactRole="Målvakt" ContactImage="/Views/1IsakPettersson-600x480.jpg" />
+            </Button>
+            
+            <Button Foreground="Transparent" x:Name="Contact3" Click="Contact3_Click" Background="{x:Null}" BorderBrush="{x:Null}">
             <Controls:ContactControls ContactName="Rasmus Lauritsen" ContactRole="Försvarare" ContactImage="/Views/3RasmusLauritsen-600x480.jpg" />
+            </Button>
+            
+            <Button x:Name="Contact4" Click="Contact4_Click" Background="{x:Null}" BorderBrush="{x:Null}">
             <Controls:ContactControls ContactName="Linus Wahlqvist" ContactRole="Försvarare" ContactImage="/Views/AP7I3326-600x400.jpg" />
-            <Controls:ContactControls ContactName="Alexander Fransson" ContactRole="Mittfältare (K)" ContactImage="/Views/7AlexanderFransson-600x480 - kopia.jpg" />
-            <Controls:ContactControls ContactName="Christoffer Nyman" ContactRole="Anfallare" ContactImage="/Views/5ChristofferNyman-600x480 - kopia.jpg" />
+            </Button>
+            
+            
+            
         </StackPanel>
 
 
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <TextBlock x:Name="contactName" FontSize="18" FontWeight="bold"/>
+            </StackPanel>
+
+            <Grid Grid.Row="1" Margin="0,15,0,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock x:Name="email"/>
+                    <TextBlock x:Name="number" FontSize="10"/>
+                </StackPanel>
+
+                
+
+            </Grid>
+            
+
+
+        </Grid>
+        
+        
+        
+        
     </Grid>
 </UserControl>

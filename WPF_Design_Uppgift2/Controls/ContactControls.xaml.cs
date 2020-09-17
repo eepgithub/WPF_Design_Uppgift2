@@ -44,9 +44,5 @@ namespace WPF_Design.Controls
             set { contactRole.Text = value; }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DataContext = new ContactInfoModel();
-        }
-    }
+    }   
 }

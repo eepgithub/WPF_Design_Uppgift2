@@ -23,9 +23,32 @@ namespace WPF_Design_Uppgift2.Views
             InitializeComponent();
         }
 
-        
-        
+        private void Contact1_Click(object sender, RoutedEventArgs e)
+        {
+            contactName.Text = "Jens Gustafsson";
+            email.Text = "Jensgustafsson@email.com";
+            number.Text = "123456789";
+        }
 
+        private void Contact2_Click(object sender, RoutedEventArgs e)
+        {
+            contactName.Text = "Isak Pettersson";
+            email.Text = "emailadress.com";
+            number.Text = "987654321";
+        }
 
+        private void Contact3_Click(object sender, RoutedEventArgs e)
+        {
+            contactName.Text = "Rasmus Lauritsen";
+                email.Text = "email@.com";
+            number.Text = "123213213213";
+        }
+
+        private void Contact4_Click(object sender, RoutedEventArgs e)
+        {
+            contactName.Text = "Linus Wahlqvist";
+            email.Text = "epostadress@mail.com";
+            number.Text = "9999999999999";
+        }
     }
 }

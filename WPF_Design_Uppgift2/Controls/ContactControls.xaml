@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="65" d:DesignWidth="300" Height="65" Width="300">
 
-    <Button Background="Transparent"  BorderThickness="0" HorizontalContentAlignment="Left" Click="Button_Click">
+    <Button Background="Transparent"  BorderThickness="0" HorizontalContentAlignment="Left">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="65"/>

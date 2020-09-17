@@ -22,5 +22,29 @@ namespace WPF_Design_Uppgift2.Views
         {
             InitializeComponent();
         }
+
+        private void message1_Click(object sender, RoutedEventArgs e)
+        {
+            subject.Text = "Meddelandeämne här uppe";
+            from.Text = "Jens Gustafsson";
+            to.Text = "Emil Pettersson";
+            body.Text = "Väldigt långt meddelande här mail mail ett långt mail här med mycket text. Väldigt långt meddelande här mail mail ett långt mail här med mycket text.";
+        }
+
+        private void message2_Click(object sender, RoutedEventArgs e)
+        {
+            subject.Text = "Ämnesrad";
+            from.Text = "Christoffer Nyman";
+            to.Text = "Emil Pettersson";
+            body.Text = "Hej det här är ett mail. Hej det här är ett mail. Hej det här är ett mail. Hej det här är ett mail.";
+        }
+
+        private void message3_Click(object sender, RoutedEventArgs e)
+        {
+            subject.Text = "Ämne";
+            from.Text = "Alexander Fransson";
+            to.Text = "Emil Pettersson";
+            body.Text = "Detta är ett testmail hejhej!";
+        }
     }
 }

@@ -21,13 +21,7 @@
             <views:MessageViewModel DataContext="{Binding}"/>
         </DataTemplate>
 
-        <DataTemplate x:Name="ContactInfoViewTemplate" DataType="{x:Type models:ContactInfoModel}">
-            <views:ContactInfoViewModel DataContext="{Binding}"/>
-        </DataTemplate>
-
-
-
-
+        
     </Window.Resources>
     
     
@@ -37,8 +31,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="300"/>
-            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="*"/>
+            
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
@@ -95,10 +89,10 @@
             </StackPanel>
             
         </Grid>
-        
-        
-        <ContentControl Grid.Column="2" Content="{Binding}"/>
 
+
+        <ContentControl Grid.Column="2" Content="{Binding}"/>
+        
 
 
     </Grid>

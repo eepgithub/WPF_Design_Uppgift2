@@ -23,17 +23,57 @@
                 <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE715;" FontSize="25" Margin="10"/>
                 <TextBlock HorizontalAlignment="Center" Text="Messages" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="300" FontSize="25" Margin="10,5,0,0"/>
             </StackPanel>
+            
+            <Button x:Name="message1" Background="{x:Null}" BorderBrush="{x:Null}" Click="message1_Click">
             <Controls:MessageControl MessageDate="2020-09-14" MessageTime="14:00" MessageName="Jens Gustafsson" MessageDescription="Förhandsvisning av meddelande här...." MessageImage="/Views/Jens-Gustafsson-600x871 - kopia.jpg"/>
-            <Controls:MessageControl MessageDate="2020-09-14" MessageTime="10:30" MessageName="Christoffer Nyman" MessageDescription="Förhandsvisning av meddelande här...." MessageImage="/Views/5ChristofferNyman-600x480 - kopia.jpg" />
-            <Controls:MessageControl MessageDate="2020-09-13" MessageTime="22:43" MessageName="Alexander Fransson" MessageDescription="Förhandsvisning av meddelande här...." MessageImage="/Views/7AlexanderFransson-600x480 - kopia.jpg" />
+            </Button>
 
+            <Button x:Name="message2"  Background="{x:Null}" BorderBrush="{x:Null}" Click="message2_Click" >
+            <Controls:MessageControl MessageDate="2020-09-14" MessageTime="10:30" MessageName="Christoffer Nyman" MessageDescription="Förhandsvisning av meddelande här...." MessageImage="/Views/5ChristofferNyman-600x480 - kopia.jpg" />
+            </Button>
+            
+            <Button x:Name="message3" Background="{x:Null}" BorderBrush="{x:Null}" Click="message3_Click">
+            <Controls:MessageControl MessageDate="2020-09-13" MessageTime="22:43" MessageName="Alexander Fransson" MessageDescription="Förhandsvisning av meddelande här...." MessageImage="/Views/7AlexanderFransson-600x480 - kopia.jpg" />
+            </Button>
+            
         </StackPanel>
 
-        
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <TextBlock x:Name="subject" FontSize="18" FontWeight="bold"/>
+            </StackPanel>
+
+            <Grid Grid.Row="1" Margin="0,15,0,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock x:Name="from"/>
+                    <TextBlock x:Name="to" FontSize="10"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Reply" Margin="5,0" />
+                        <Button Content="Reply All" Margin="5,0" />
+                        <Button Content="Forward" Margin="5,0" />
+                    </StackPanel>
+                    <TextBlock x:Name="time" Text="tor 10:50" TextAlignment="Right" Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Grid>
+            <TextBlock Grid.Row="2" x:Name="body" TextWrapping="Wrap" Text=""/>
 
 
-
-
+        </Grid>
 
     </Grid>
 </UserControl>
