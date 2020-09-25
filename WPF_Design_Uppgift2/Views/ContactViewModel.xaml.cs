@@ -27,7 +27,7 @@ namespace WPF_Design_Uppgift2.Views
         {
             contactName.Text = "Jens Gustafsson";
             email.Text = "Jensgustafsson@email.com";
-            number.Text = "123456789";
+            number.Text = "1234546789";
         }
 
         private void Contact2_Click(object sender, RoutedEventArgs e)
